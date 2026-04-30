@@ -7,7 +7,7 @@ Your own self-hosted Drive for files, folders, notes, search, previews, and tras
 One-line install, after the public repo exists:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gambitapplications/ortegapoint-community/main/install.sh | bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gambitapplications/ortegapoint-community/main/install.sh)"
 ```
 
 Manual clone:

@@ -7,7 +7,7 @@ Ortega Point Community is a self-hosted file-and-notes workspace. You run it on 
 After the public repository exists, the intended install command is:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gambitapplications/ortegapoint-community/main/install.sh | bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gambitapplications/ortegapoint-community/main/install.sh)"
 ```
 
 The installer asks for:
