@@ -39,7 +39,8 @@ WORK_TMP=""
 SOURCE_DIR=""
 DEFAULT_REPO_URL="${ORTEGA_DEFAULT_REPO_URL:-https://github.com/gambitapplications/ortegapoint-community.git}"
 REPO_URL="${ORTEGA_REPO_URL:-${DEFAULT_REPO_URL}}"
-SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_PATH="${BASH_SOURCE[0]:-${0}}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${SCRIPT_PATH}")" && pwd)"
 
 cleanup() {
   if [[ -n "${WORK_TMP}" && -d "${WORK_TMP}" ]]; then
