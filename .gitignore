@@ -1,0 +1,35 @@
+# Build output
+.next
+node_modules
+
+# App runtime data (user's actual files + metadata DB)
+data
+storage/
+ortegapoint-community-backups/
+
+# Local env — never commit real paths or secrets
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Logs + caches
+*.log
+.cache/
+
+# Temp + backup artifacts
+/tmp/
+*.bak-*
+app.backup-*/
+
+# Tooling
+.codex-conductor/
+.tailscale-status
+
+# OS
+.DS_Store
+
+# Editors (keep shared extension recommendations if present)
+.idea/
+.vscode/*
+!.vscode/extensions.json

@@ -1,0 +1,25 @@
+[Unit]
+Description=Ortega Point Community (__LABEL__)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=__APP_DIR__
+ExecStart=__NODE_BIN__ .next/standalone/server.js
+Restart=always
+RestartSec=5
+Environment=HOME=__HOME__
+Environment=USER=__USER__
+Environment=ORTEGA_STORAGE_ROOT=__STORAGE_ROOT__
+Environment=ORTEGA_DATA_DIR=__DATA_DIR__
+Environment=HOSTNAME=__HOSTNAME__
+Environment=PORT=__PORT__
+Environment=CF_ACCESS_AUD=__CF_AUD__
+Environment=CF_ACCESS_TEAM_DOMAIN=__CF_TEAM__
+Environment=NODE_ENV=production
+StandardOutput=append:/tmp/ortegapoint-community.log
+StandardError=append:/tmp/ortegapoint-community.log
+
+[Install]
+WantedBy=default.target

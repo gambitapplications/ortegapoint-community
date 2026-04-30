@@ -1,0 +1,16 @@
+[Unit]
+Description=Ortega Point Community Next.js app
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=__APP_DIR__
+EnvironmentFile=__ENV_FILE__
+ExecStart=/usr/bin/env npm run start:standalone
+Restart=always
+RestartSec=5
+User=__USER__
+Group=__GROUP__
+
+[Install]
+WantedBy=multi-user.target

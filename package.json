@@ -1,0 +1,32 @@
+{
+  "name": "ortegapoint-community",
+  "version": "0.1.0",
+  "description": "A self-hosted file-and-notes workspace for personal storage.",
+  "type": "module",
+  "license": "MIT",
+  "author": "gambitapplications",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gambitapplications/ortegapoint-community.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:standalone": "node .next/standalone/server.js",
+    "test": "node --test --loader ./tests/alias-loader.mjs",
+    "lint": "next lint",
+    "postbuild": "rm -rf .next/standalone/.next/static && cp -r .next/static .next/standalone/.next/static"
+  },
+  "dependencies": {
+    "heic-convert": "^2.1.0",
+    "jose": "^6.2.2",
+    "next": "^15.5.15",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "sharp": "^0.34.5"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}
