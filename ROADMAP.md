@@ -1,6 +1,8 @@
 # Roadmap
 
-Ortega Point Community is intended to be a public, open-source, self-hosted Drive-style workspace that does not expose personal deployment details.
+Ortega Point Community is intended to be its own public, open-source, self-hosted Drive-style workspace under `gambitapplications`.
+
+The community project should keep its own package name, service names, install paths, database filename, docs, release history, and issue tracker. It should not depend on or expose any private deployment details.
 
 This roadmap is intentionally conservative. Data safety, clear setup, and private-by-default deployment come before team/SaaS-style features.
 

@@ -1,10 +1,12 @@
 # Hosting Ortega Point Community
 
-Ortega Point Community is a self-hosted file-and-notes workspace. You run it on a device you control, choose where your files live on disk, and decide how other devices reach it.
+Ortega Point Community is a standalone, self-hosted file-and-notes workspace. You run it on a device you control, choose where your files live on disk, and decide how other devices reach it.
+
+The community project uses its own package name, install directory, service labels, log names, and database filename. A default install is separate from any other app or repo on the same machine.
 
 ## Quick Start
 
-After the public repository exists, the intended install command is:
+Install command:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gambitapplications/ortegapoint-community/main/install.sh)"
@@ -17,8 +19,6 @@ The installer asks for:
 - Port: default `3000`
 - Access mode: Tailscale, Cloudflare Tunnel, or local only
 - Cloudflare Access values, only if you choose Cloudflare mode
-
-Until the public repo exists, use the manual clone flow in [README.md](README.md).
 
 Before running the installer on a new host, follow [PREREQUISITES.md](PREREQUISITES.md) to install and verify Node.js, Git, SQLite, and any optional network tools.
 

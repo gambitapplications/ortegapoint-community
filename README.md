@@ -2,9 +2,11 @@
 
 Your own self-hosted Drive for files, folders, notes, search, previews, and trash.
 
+Ortega Point Community is a standalone public project by `gambitapplications`. It has its own repository, package name, install paths, service names, database filename, and documentation.
+
 ## Install
 
-One-line install, after the public repo exists:
+One-line install:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gambitapplications/ortegapoint-community/main/install.sh)"
@@ -18,7 +20,16 @@ cd ortegapoint-community
 ./install.sh
 ```
 
-If you are testing a fork or private mirror, clone that repo instead and run `./install.sh` from the checked-out directory.
+If you are testing a fork, clone that repo instead and run `./install.sh` from the checked-out directory.
+
+## Project Identity
+
+- Repository: `gambitapplications/ortegapoint-community`
+- Package: `ortegapoint-community`
+- macOS service: `com.ortegapoint-community.app`
+- Linux service: `ortegapoint-community.service`
+- Default app root: `~/.ortegapoint-community`
+- SQLite database: `ortegapoint-community.sqlite`
 
 ## Access Modes
 
